@@ -8,6 +8,10 @@ Show memory and disk usage. In sidebar, select App Status.
 
 ## Commands
 
+Refresh editor to display files created from command line:
+
+    refresh
+
 Get the versions of interesting tools
 
 ```
@@ -52,6 +56,8 @@ Target: x86_64-unknown-linux-gnu
 ```
 
 ## Notes
+
+Running and compiling simple Go and Erlang programs works.
 
 Some other notable tools whose versions I don't care about:
 
