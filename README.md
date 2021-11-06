@@ -57,7 +57,7 @@ Target: x86_64-unknown-linux-gnu
 
 ## Notes
 
-Running and compiling simple Go and Erlang programs works.
+Running and compiling simple Go and Erlang programs works. It's possible to build and run Go programs as the server for your Glitch project.
 
 Some other notable tools whose versions I don't care about:
 
