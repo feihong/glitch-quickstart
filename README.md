@@ -59,12 +59,12 @@ Target: x86_64-unknown-linux-gnu
 
 Running and compiling simple Go and Erlang programs works. 
 
-I successfully build and ran simple web servers using these languages:
+I successfully built and ran simple web servers using these languages:
 
 - Go
 - F#
 
-Running `go build` on a minimal project takes about 1 second. Memory use is 14 MB (out of 512 MB).
+Running `go build` on a minimal project takes about 1 second. Memory use is 14 MB (out of 512 MB). This compared to the stock Fastify app which uses 53 MB.
 
 Running `dotnet build` on a minimal project takes about 33 seconds from a clean build (14 seconds from cached build). Memory use is 54 MB.
 
