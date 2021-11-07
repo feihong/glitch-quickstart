@@ -38,6 +38,32 @@ Clean build takes 47s, subsequent builds take 13s. Memory use is 49 MB.
 
 To run, change scripts/start to `dotnet run`.
 
+## Janet
+
+To install:
+
+    curl -L https://github.com/janet-lang/janet/tarball/master | tar xz
+    cd janet-lang-janet-*
+    # Change PREFIX in Makefile from /usr/local to /app/.local
+    make
+    make test
+    make install
+    cd ..
+    rm -rf janet-lang-janet-*
+
+    curl -L https://github.com/janet-lang/jpm/tarball/master | tar xz
+    git clone --depth 1 https://github.com/janet-lang/jpm
+    cd jpm
+    PREFIX=/app/.local janet bootstrap.janet
+    cd ..
+    rm -rf jpm
+
+Installing janet and jpm is pretty simple, but actually using jpm to install a package consumes a significant amount of memory and CPU. The generated files also consume a fair amount of disk space.
+
+No build is necessary, but startup of janet process causes a brief CPU spike. Memory use is 16 MB.
+
+To run, change scripts/start to `janet server.janet`
+
 ## Notes
 
 I can compile and run simple Erlang programs.
