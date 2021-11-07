@@ -1,5 +1,7 @@
 # Feihong's Glitch quickstart
 
+Reference project: https://glitch.com/edit/#!/silk-mini-saltasaurus
+
 ## Actions
 
 Open terminal. In sidebar, select Tools > Terminal.
