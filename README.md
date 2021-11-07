@@ -57,7 +57,16 @@ Target: x86_64-unknown-linux-gnu
 
 ## Notes
 
-Running and compiling simple Go and Erlang programs works. It's possible to build and run Go programs as the server for your Glitch project.
+Running and compiling simple Go and Erlang programs works. 
+
+I successfully build and ran simple web servers using these languages:
+
+- Go
+- F#
+
+Running `go build` on a minimal project takes about 1 second. Memory use is 14 MB (out of 512 MB).
+
+Running `dotnet build` on a minimal project takes about 33 seconds from a clean build (14 seconds from cached build). Memory use is 54 MB.
 
 Some other notable tools whose versions I don't care about:
 
