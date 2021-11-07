@@ -1,0 +1,12 @@
+# dotnet
+/obj
+/bin
+
+# go
+app
+
+# erlang
+*.beam
+
+# misc
+.env
