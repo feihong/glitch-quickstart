@@ -4,9 +4,9 @@ Reference project: https://glitch.com/edit/#!/silk-mini-saltasaurus
 
 ## Actions
 
-Open terminal. In sidebar, select Tools > Terminal.
+Open terminal: In sidebar, select Tools > Terminal.
 
-Show memory and disk usage. In sidebar, select App Status.
+Show memory and disk usage: In sidebar, select App Status.
 
 ## Commands
 
@@ -14,22 +14,35 @@ Refresh editor to display files created from command line:
 
     refresh
 
-Get the versions of interesting tools:
+Get the versions of interesting tools (see versions.txt for results from latest run):
 
     source versions.sh
 
+## Go
+
+To build:
+
+    go build
+
+Clean build takes 15s, subsequent builds take 1s. Memory use is 11 MB.
+
+To run, change scripts/start to `./app`.
+
+## F#
+
+To build:
+
+    dotnet build
+
+Clean build takes 47s, subsequent builds take 13s. Memory use is 49 MB.
+
+To run, change scripts/start to `dotnet run`.
+
 ## Notes
 
-Running and compiling simple Go and Erlang programs works.
+I can compile and run simple Erlang programs.
 
-I successfully built and ran simple web servers using these languages:
-
-- Go
-- F#
-
-Running `go build` on a minimal project takes about 1 second. Memory use is 14 MB (out of 512 MB). This compared to the stock Fastify app which uses 53 MB.
-
-Running `dotnet build` on a minimal project takes about 33 seconds from a clean build (14 seconds from cached build). Memory use is 54 MB.
+The stock Fastify app uses 24 MB of memory.
 
 Some other notable tools whose versions I don't care about:
 
